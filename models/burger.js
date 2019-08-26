@@ -17,13 +17,13 @@ var burger = {
         orm.updateOne("burgers", objColVals, condition, function(res) {
             bd(res);
         });
-    }
+    },
 
-    // delete: function(condition, bd) {
-    //     orm.delete("cats", condition, function(res) {
-    //         bd(res);
-    //     });
-    // }
+    delete: function(condition, bd) {
+        orm.delete("cats", condition, function(res) {
+            bd(res);
+        });
+    }
 };
 
 module.exports = burger;

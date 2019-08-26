@@ -21,22 +21,13 @@
   {{/each}}
 </ul>
 
-<li>
-	{{name}}
-
-	<button class="eat" data-id="{{id}}" data-neweat="{{devoured}}">
-		{{#if devoured}}Vomit!{{else}}Eat Me!{{/if}}
-	</button>
-
-	<button class="delete-burger" data-id="{{this.id}}">Cancel Order!</button>
-</li>
 
 <h2>What's your favorite burger?</h2>
 <form class="create-form">
 
   <div class="form-group">
-    <label for="burger">Burger Name:</label>
-    <input type="text" id="burger" name="name">
+    <label for="burg">Burger Name:</label>
+    <input type="text" id="burg" name="name">
   </div>
 
 

@@ -63,7 +63,7 @@ var orm = {
     updateOne: function(table, objColVals, condition, bd) {
         var qString = "UPDATE " + table;
 
-        qString += "SET ";
+        qString += " SET ";
         qString += objToSql(objColVals);
         qString += " WHERE ";
         qString += condition;
@@ -76,22 +76,22 @@ var orm = {
             }
             bd(result);
         });
-    }
+    },
 
-    // delete: function(table, condition, bd) {
-    //     var qString = "DELETE FROM " + table;
+    delete: function(table, condition, bd) {
+        var qString = "DELETE FROM " + table;
         
-    //     qString += " WHERE ";
-    //     qString += condition;
+        qString += " WHERE ";
+        qString += condition;
 
-    //     connection.query(qString, function(err, result) {
-    //         if (err) {
-    //             throw err;
-    //         }
+        connection.query(qString, function(err, result) {
+            if (err) {
+                throw err;
+            }
 
-    //         bd(result);
-    //     });
-    // }
+            bd(result);
+        });
+    }
 };
 
 module.exports = orm;
