@@ -46,7 +46,7 @@ var orm = {
         qString += cols.toString();
         qString += ") ";
         qString += "VALUES (";
-        qString += printQuestionMarks(val.length);
+        qString += printQuestionMarks(vals.length);
         qString += ") ";
 
         console.log(qString);
