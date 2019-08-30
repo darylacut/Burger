@@ -1,18 +1,52 @@
-body {
-    background-color: black;
+.card-header {
+    background: rgba(0,0,0,0);
+    padding: 5% 5%;
+    border-color: rgba(0,0,0,0);
+    color:  rgb(248, 99, 49);
+    max-height: 20%;
 }
-.card-body {
-    background-image: url(/assets/img/board-1170028_1920_edited.jpg);
+
+.HdrTxt {
+    font-size: 300%;
+}
+
+#container {
+    border: 0px;
+    border-radius: 0px;
+    font-family: 'Zilla Slab', serif;
+    color: whitesmoke;
+    height: 100vh;
+    background-image: url(/assets/img/texture-1506361_1920_edited.jpg);
     background-color: black;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Zilla Slab', serif;
-    color: whitesmoke;
-    border-color: black;
 }
 
-.card {
-    border: 0px;
-    border-radius: 0px;
+.card-menu {
+    margin: 0 auto;
+    border-style: dotted;
+    border-radius: 35px;
+    border-color: rgb(248, 99, 49, 0.75);
+    width: 40%;
+}
+
+.card-title {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 200%;
+}
+
+.eat {
+    background-color:  rgb(248, 99, 49, 0.8);
+    border: none;
+    padding: 3px 10px;
+    margin: 0px 0px 10px 10px;
+    border-radius: 5px; 
+}
+
+.footer {
+    color: grey;
+    position: absolute;
+    bottom: 10px;
+    width: 96%;
 }
