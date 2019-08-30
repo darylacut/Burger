@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+.card-body {
+    background-image: url(/assets/img/board-1170028_1920_edited.jpg);
+    background-color: black;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Zilla Slab', serif;
+    color: whitesmoke;
+    border-color: black;
+}
+
+.card {
+    border: 0px;
+    border-radius: 0px;
+}
