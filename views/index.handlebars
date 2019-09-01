@@ -1,60 +1,63 @@
 <div class="card text-center" id="container">
-  <div class="card-header">
-    <h1 class="HdrTxt">Welcome to Burger Bites!</h1>
-  </div>
-
-<br>
-{{!-- ===================     body      ===================== --}}
 
 
-  <div class="card-body">
-    <h2>Please place your order:</h2>
-    <form class="create-form">
-      <div class="form-group">
-        <label for="burg">Burger Name:</label>
-        <input type="text" id="burg" name="name">
+    <div class="card-header">
+      <div id="HdrDiv">
+        <h1 class="HdrTxt">Welcome to Burger Bites!</h1>
       </div>
-      <button type="submit" id="newBurgBtn">Order</button>
-    </form>
+    </div>
 
 
-    <div class="card-deck">
-      
-      <div class="card-menu">
-        <div class="card-body">
-          <h5 class="card-title">For Dine-In</h5>
-          <ul>
-            {{#each burgers}}
-              {{#unless devoured}}
-                {{> burgers/burger-block devoured=true}}
-              {{/unless}}
-            {{/each}}
-          </ul>
-         </div>
-      </div>
+    <div class="card-body">
 
-      <div class="card-menu">
-        <div class="card-body">
-          <h5 class="card-title">For Take-Out</h5>
-            <ul>
-              {{#each burgers}}
-                {{#if devoured}}
-                  {{> burgers/burger-block devoured=false}}
-                {{/if}}
-              {{/each}}
-            </ul>
+        <div class="input-group mb-3" class="row" id="inputBox">
+            <form class="input-group mb-3" class="create-form">
+                <input type="text" id="burg" name="name" class="form-control" placeholder="Enter burger name here" aria-label="Enter burger name here" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="submit" id="newBurgBtn">Place Order</button>
+                </div>
+            </form>
         </div>
-      </div>
+
+
+        <div id="cardsContainer" class="row">
+            <div id="in">
+              <div class="orderList">
+                <div class="card-body">
+                  <h2 class="card-title">~~*  For Dine - In  *~~</h2>
+                  <h4><ul><br>
+                      {{#each burgers}}
+                        {{#unless devoured}}
+                          {{> burgers/burger-block devoured=true}}
+                        {{/unless}}
+                      {{/each}}
+                  </ul></h4>
+                </div>
+              </div>
+            </div>
+
+            <div id="out">
+              <div class="orderList">
+                <div class="card-body">
+                  <h2 class="card-title">~~*  For Take - Out  *~~</h2>
+                  <h4><ul><br>
+                        {{#each burgers}}
+                          {{#if devoured}}
+                            {{> burgers/burger-block devoured=false}}
+                          {{/if}}
+                        {{/each}}
+                  </ul></h4>
+                </div>
+              </div>
+            </div>
+        </div>
 
     </div>
 
-
-{{!-- ==================      footer      =========================== --}}
-
-    <div class="footer">
-      Thank you for ordering at Burger Bites. Please come again!
+    
+    <div class="card-footer text-muted">
+        <h4 id="FtrTxt">Thank you for ordering Burger Bites. Please come again!</h4>
     </div>
 
-  </div>
 
 </div>

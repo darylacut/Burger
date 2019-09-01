@@ -1,52 +1,103 @@
-.card-header {
-    background: rgba(0,0,0,0);
-    padding: 5% 5%;
-    border-color: rgba(0,0,0,0);
-    color:  rgb(248, 99, 49);
-    max-height: 20%;
-}
-
-.HdrTxt {
-    font-size: 300%;
-}
-
 #container {
     border: 0px;
     border-radius: 0px;
     font-family: 'Zilla Slab', serif;
     color: whitesmoke;
-    height: 100vh;
+    min-height: 100vh;
     background-image: url(/assets/img/texture-1506361_1920_edited.jpg);
     background-color: black;
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-.card-menu {
+.card-header {
+    background: rgba(0,0,0,0);
+    border: none;
+    margin-top: 2%;
+    color:  rgb(248, 99, 49);
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#HdrDiv {
+    font-size: 75%;
+    min-width: 100%;
+}
+
+.HdrTxt {
+    font-size: 5em;
+    font-weight: 800;
+}
+
+#inputBox {
+    padding: 0px 20%; 
     margin: 0 auto;
-    border-style: dotted;
+}
+
+.btn:hover {
+    background-color: rgb(248, 99, 49, 0.8);
+    border-color: rgb(248, 99, 49, 0.2);
+}
+
+#cardsContainer {
+    margin: 0 auto;
+    margin-top: 5%;
+    font-family: 'Patrick Hand SC', cursive;
+}
+.orderList {
+    background-color:rgba(0,0,0,0);
+    border: dashed;
     border-radius: 35px;
     border-color: rgb(248, 99, 49, 0.75);
-    width: 40%;
+    width: 500px;
+    text-align: center;
 }
 
-.card-title {
-    font-family: 'Patrick Hand SC', cursive;
-    font-size: 200%;
+#in {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+#out {
+    margin: 0 auto;
+}
+
+ul {
+    list-style-image: url(/assets/img/burger.png);
+    size: 20px;
+}
+
+li {
+    size: 20px;
 }
 
 .eat {
-    background-color:  rgb(248, 99, 49, 0.8);
-    border: none;
-    padding: 3px 10px;
+    background-color:  rgb(0,0,0,0);
+    border: solid;
+    border-width: 1px;
+    border-color: rgba(128, 128, 128, 0.781);
+    padding: 10px 20px;
     margin: 0px 0px 10px 10px;
-    border-radius: 5px; 
+    border-radius: 6px; 
+    font-family: 'Zilla Slab', serif;
+    font-size: 18.5px;
+    color: rgba(128, 128, 128, 0.781);
+    transition: 0.2s;
 }
 
-.footer {
+.eat:hover {
+    background-color: rgb(248, 99, 49, 0.8);
+    border-color: rgb(248, 99, 49, 0.2);
+    color: white;
+    transition: 0.3s;
+}
+
+.card-footer {
     color: grey;
-    position: absolute;
-    bottom: 10px;
-    width: 96%;
+    background: rgba(0,0,0,0);
+    border: none;
 }
