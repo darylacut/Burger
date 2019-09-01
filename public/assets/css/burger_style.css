@@ -13,14 +13,17 @@
 }
 
 .card-header {
-    background: rgba(0,0,0,0);
+    background: rgb(206,189,154);
     border: none;
-    margin-top: 2%;
-    color:  rgb(248, 99, 49);
-    min-height: 15vh;
+    color:  black;
+    height: 11vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    padding: 4% 0%;
 }
 
 #HdrDiv {
@@ -33,26 +36,27 @@
     font-weight: 800;
 }
 
-#inputBox {
-    padding: 0px 20%; 
-    margin: 0 auto;
+#content {
+    margin-top: 17vh;
+    margin-bottom: 5vh;
 }
 
-.btn:hover {
-    background-color: rgb(248, 99, 49, 0.8);
-    border-color: rgb(248, 99, 49, 0.2);
+#inputBox {
+    max-width: 40%;
+    margin: 0 auto;
 }
 
 #cardsContainer {
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 4%;
     font-family: 'Patrick Hand SC', cursive;
 }
 .orderList {
     background-color:rgba(0,0,0,0);
     border: dashed;
     border-radius: 35px;
-    border-color: rgb(248, 99, 49, 0.75);
+    border-color: rgba(232,215,185,0.4);
+    border-width: 6px;
     width: 500px;
     text-align: center;
 }
@@ -64,6 +68,7 @@
 
 #out {
     margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 ul {
@@ -90,14 +95,29 @@ li {
 }
 
 .eat:hover {
-    background-color: rgb(248, 99, 49, 0.8);
-    border-color: rgb(248, 99, 49, 0.2);
-    color: white;
+    background-color:  rgba(232,215,185,0.7);
+    border-color:  rgba(0,0,0,0);
+    color: black;
     transition: 0.3s;
+    font-weight: 1000;
 }
 
 .card-footer {
-    color: grey;
-    background: rgba(0,0,0,0);
+    background:black;
     border: none;
+    max-height: 8vh;
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    z-index: 3;
+}
+
+#ftrDiv {
+    font-size: 55%;
+    min-width: 100%;
+}
+
+#ftrTxt {
+    font-size: 2em;
+    font-weight: 50;
 }
